@@ -1,0 +1,21 @@
+% This is amoler.sty, intending to function as a guide to
+% writing your own LaTeX documents. You can find this guide
+% at https://amoler.github.io/writing-latex-packages.
+
+% Initializing package and forcing the LaTeX 2.09 format
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{amoler}[My custom package, last updated October 28, 2020]
+
+% Custom packages:
+\RequirePackage{amsmath}
+
+
+
+% Custom defined commands:
+
+% \floor:
+% 	- @param value The value to display the floor brackets around
+% 	- Output: \left\lfloor {value} \right\rfloor
+\newcommand{\floor}[1]{%
+	\left\lfloor {#1}\right\rfloor
+}%
